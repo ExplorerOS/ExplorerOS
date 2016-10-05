@@ -376,4 +376,4 @@ Please be aware that any customized variable under 'eos' is not safe. For extens
 License
 -------
 
-Licensed under the Apache License, Version 2.0. All rights which are not explicitly granted by the Apache License Version 2.0 are reserved by the Original Author.
+Please consult the LICENSE file for details. All rights which are not explicitly granted by the Apache License Version 2.0 are reserved by the Original Author.
