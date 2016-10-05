@@ -376,6 +376,4 @@ Please be aware that any customized variable under 'eos' is not safe. For extens
 License
 -------
 
-Please consult the attached LICENSE file for details. All rights not explicitly granted by the Apache 2.0 license are reserved by the Original Author.
-
-It is the opinion of the Original Author that this code conforms to the terms of jQuery Open Specifications Promise. Given the vagaries of the promise, the Original Author makes no legal claim that in fact end users are protected from future actions. It is highly recommended that, for commercial uses, you consult a lawyer before proceeding.
+Licensed under the Apache License, Version 2.0. All rights which are not explicitly granted by the Apache License Version 2.0 are reserved by the Original Author.
