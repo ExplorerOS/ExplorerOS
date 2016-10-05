@@ -11,7 +11,7 @@ Feel free to visit our website for more details: http://www.explorerOS.com.
 How to Include
 --------------
 
-ExplorerOS is composed of three modules: Core, Framework, and Components. We are free to include any of them separately for our convenience. Here is an example to include the complete version of explorerOS.
+ExplorerOS is composed of three modules: Core, Framework, and Components. Here is an example to include the complete version of explorerOS.
 ```
 <link href="ajax/lib.eos.css" rel="stylesheet" type="text/css"/>
 <script src="ajax/lib.jquery.js"></script>
@@ -21,7 +21,7 @@ ExplorerOS is composed of three modules: Core, Framework, and Components. We are
 
 
 
-EOS.Core
+ExplorerOS.Core
 ----------
 
 How to use:
@@ -56,7 +56,7 @@ Functions:
 
 
 
-EOS.Framework
+ExplorerOS.Framework
 -------------------
 
 How to use:
@@ -201,7 +201,7 @@ app.chd.hotkey = function(event) {
 
 
 
-EOS.Components
+ExplorerOS.Components
 --------------------
 
 How to use:
