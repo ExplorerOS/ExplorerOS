@@ -1,0 +1,288 @@
+@charset "utf-8";
+@import url(lib.jvectormap.css);
+
+
+/* app background */
+.eos-appframe {background: url(http://image.brianwang.net/app.bg.png)}
+
+
+/* general */
+.gtm-container-block {
+	position: relative;
+	overflow: hidden;
+	margin: 30px;
+}
+.gtm-container-component {
+	position: static;
+	float: left;
+	margin: 0 15px 3px 0;
+	width: 320px;
+	height: 30px;
+}
+.gtm-link-title {
+	position: static;
+	float: left;
+	clear: both;
+	margin: 0 6px 3px 6px;
+	color: #333;
+	vertical-align: middle;
+	text-align: left;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: normal;
+}
+.gtm-link-line {
+	position: static;
+	float: left;
+	clear: both;
+	margin: 3px 0 10px 0;
+	width: 100%;
+	height: 1px;
+	background: #777;
+}
+.gtm-link-blank {
+	position: static;
+	float: left;
+	clear: both;
+	width: 100%;
+	height: 24px;
+}
+.gtm-label {
+	display: inline-block;
+	position: relative;
+	width: 130px;
+	height: 25px;
+	top: 3px;
+}
+.gtm-input {
+	position: relative;
+	width: 130px;
+	height: 25px;
+}
+.gtm-select {
+	position: relative;
+	width: 130px;
+	height: 25px;
+}
+.gtm-grid {
+	position: static;
+	float: left;
+	clear: both;
+	margin: 10px 0;
+	width: 100%;
+}
+
+
+/* menu */
+.gtm-qmenu-btMaster {
+	//background: #f0bd98;
+}
+.gtm-qmenu-btMaster:hover {
+	background: #f59651;
+}
+.gtm-qmenu-btIDeclaration {
+	//background: #c5efb0;
+}
+.gtm-qmenu-btIDeclaration:hover {
+	background: #8ce55f;
+}
+.gtm-qmenu-btEBook {
+	//background: #fff7a2;
+}
+.gtm-qmenu-btEBook:hover {
+	background: #ffe16f;
+}
+.gtm-qmenu-btContent {
+	//background: #baf5ff;
+}
+.gtm-qmenu-btContent:hover {
+	background: #47e5fd;
+}
+.gtm-qmenu-btUserManage {
+	//background: #fac9f6;
+}
+.gtm-qmenu-btUserManage:hover {
+	background: #f586ec;
+}
+
+
+/* start */
+#gtm-start-background {
+	z-index: -1;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+}
+.gtm-start-loginwin {
+	z-index: 1;
+	box-shadow: 0 0 12px #000;
+	box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
+	margin-left: -180px;
+	margin-top: -160px;
+	left: 50%;
+	top: 40%;
+	width: 360px;
+	height: 400px;
+	background: #fff;
+	background: rgba(255, 255, 255, 0.63);
+}
+.gtm-start-uidl {
+	z-index: 3;
+	border-radius: 100%;
+	left: 60px;
+	top: 105px;
+	width: 27px;
+	height: 27px;
+	background: #5e5e5e url(http://image.brianwang.net/start.user.png) center no-repeat;
+}
+.gtm-start-uidi {
+	z-index: 3;
+	border: 0;
+	border-bottom: 1px solid #333;
+	left: 108px;
+	top: 104px;
+	width: 165px;
+	height: 27px;
+	background: none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+}
+.gtm-start-pwl {
+	z-index: 3;
+	border-radius: 100%;
+	left: 60px;
+	top: 165px;
+	width: 27px;
+	height: 27px;
+	background: #5e5e5e url(http://image.brianwang.net/start.password.png) center no-repeat;
+}
+.gtm-start-pwi {
+	z-index: 3;
+	border: 0;
+	border-bottom: 1px solid #333;
+	left: 108px;
+	top: 164px;
+	width: 165px;
+	height: 27px;
+	background: none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+}
+.gtm-start-submitb {
+	z-index: 3;
+	border: 0;
+	left: 295px;
+	top: 164px;
+	width: 30px;
+	height: 27px;
+	background: none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+}
+.gtm-start-submitb:hover {
+	color: #33b0d5;
+}
+.gtm-start-submitb:focus {
+	color: #33b0d5;
+}
+.gtm-start-submitb:active {
+	color: #666;
+}
+.gtm-start-invalida {
+	z-index: 2;
+	visibility: hidden;
+	margin: 0 10%;
+	left: 0;
+	top: 60%;
+	width: 80%;
+	height: 20%;
+	color: #932;
+	text-align: center;
+	font-family: Georgia, serif;
+	font-size: 17px;
+}
+.gtm-start-invalida-ani {animation: gtm-start-invalid 0.6s 3}
+@keyframes gtm-start-invalid {
+	0%   {color: #932}
+	50%  {color: #bb3823}
+	100% {color: #932}
+}
+.gtm-start-loadinga {
+	z-index: 1;
+	opacity: 0;
+	margin: 0 10%;
+	left: 0;
+	top: 30%;
+	width: 80%;
+	height: 50%;
+	text-align: center;
+	text-shadow: 1px 1px 8px #fff;
+	line-height: 150%;
+	font-family: Georgia, serif;
+	font-size: 18px;
+}
+.gtm-start-wait {
+	left: 0;
+	top: 50%;
+	width: 100%;
+	height: 50%;
+}
+.gtm-start-wait-i {
+	background: #000;
+}
+
+
+/* md user */
+.gtm-user-component {
+	width: 420px;
+	clear: both;
+}
+.gtm-user-input {
+	width: 230px;
+}
+.gtm-user-select {
+	width: 230px;
+}
+
+
+/* md configuration */
+.gtm-config-link {
+	position: static;
+	float: left;
+	padding: 6px;
+    width: 180px;
+    height: 32px;
+	cursor: default;
+}
+.gtm-config-link:hover {
+	color: #509be5;
+}
+
+
+/* md importinvoice */
+.gtm-importinvoice-ccButtons {
+	width: 360px;
+	height: 30px;
+}
+.gtm-importinvoice-buttons {
+	position: static;
+	float: left;
+	width: 60px;
+	height: 30px;
+	color: #eee;
+	background: #555;
+	font-size: 12px;
+}
+.gtm-importinvoice-buttons:hover {
+	background: #33b0d5
+}
+.gtm-importinvoice-grid {
+	height: 360px;
+}
+
+
+/* md importinvoiceview */
+.gtm-importinvoiceview-grid {
+	height: 180px;
+}
