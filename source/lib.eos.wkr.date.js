@@ -1,0 +1,1 @@
+eos_wkr_date();function eos_wkr_date(){var a=[];var g=new Date();var c=g.getHours();var b=g.getMinutes();var f=g.getMonth()+1;var d=g.getDate();var e=g.getFullYear();c=c<10?"0"+c:c;b=b<10?"0"+b:b;a[0]=c+":"+b;a[1]=f+"/"+d+"/"+e;postMessage(a);setTimeout(function(){return eos_wkr_date()},10000)};
