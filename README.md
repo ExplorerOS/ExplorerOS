@@ -4,7 +4,7 @@ ExplorerOS is a JavaScript library built to facilitate web application developme
 It calls jQuery APIs, 1.x/2.x/3.x depending on your needs.
 It currently also calls velocityJS APIs as it's a fast animation engine. This will be soon replaced by core. 
 
-Feel free to visit our website for more details: http://www.explorerOS.com.
+Feel free to visit our website for more details at http://www.explorerOS.com.
 
 
 
