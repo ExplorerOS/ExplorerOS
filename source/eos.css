@@ -1,0 +1,1918 @@
+/*! Copyright © 2016 Brian Wang, http://explorerOS.com */
+
+@charset "utf-8";
+
+body {
+	z-index: -1;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	background: #000
+}
+
+a:link {
+	color: none
+}
+
+a:visited {
+	color: none
+}
+
+::-webkit-scrollbar {
+	width: 3px;
+	height: 9px;
+	background-color: #f5f5f5
+}
+
+::-webkit-scrollbar-track {
+	border-radius: 6px;
+	background-color: #f5f5f5
+}
+
+::-webkit-scrollbar-thumb {
+	border-radius: 6px;
+	background-color: #555
+}
+
+.eos-general {
+	position: absolute;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	border-radius: 0;
+	box-shadow: none;
+	background: 0;
+	outline: 0;
+	vertical-align: middle;
+	text-align: left;
+	word-wrap: normal;
+	text-shadow: none;
+	text-decoration: none;
+	line-height: normal;
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 15px;
+	font-style: normal;
+	font-weight: normal
+}
+
+#eos-pageframe {
+	position: absolute;
+	overflow: hidden;
+	visibility: visible;
+	z-index: 0;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	background: 0;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	vertical-align: middle;
+	text-align: left;
+	word-wrap: normal;
+	text-shadow: none;
+	text-decoration: none;
+	line-height: normal;
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 15px;
+	font-style: normal;
+	font-weight: normal
+}
+
+#eos-pagewaiter {
+	position: absolute;
+	overflow: hidden;
+	visibility: hidden;
+	z-index: 950;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	background: 0;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%
+}
+
+.eos-pagewaiter-spot {
+	position: absolute;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	left: -9px;
+	bottom: 24px;
+	width: 3.6px;
+	height: 3.6px;
+	border-radius: 100%;
+	box-shadow: 0 0 3px #000;
+	background: #93d6ff
+}
+
+.eos-pagewaiter-spot-ani {
+	animation: eos-pagewaiter 6s infinite cubic-bezier(0,0.7,1.0,0.3)
+}
+
+#eos-pagewaiter-spot1 {
+	animation-delay: .1s
+}
+
+#eos-pagewaiter-spot2 {
+	animation-delay: .3s
+}
+
+#eos-pagewaiter-spot3 {
+	animation-delay: .5s
+}
+
+#eos-pagewaiter-spot4 {
+	animation-delay: .7s
+}
+
+#eos-pagewaiter-spot5 {
+	animation-delay: .9s
+}
+
+@keyframes eos-pagewaiter {
+	0% {
+		left: 0
+	}
+
+	75% {
+		left: 100%
+	}
+
+	100% {
+		left: 100%
+	}
+}
+
+#eos-pagemsger {
+	position: absolute;
+	overflow: hidden;
+	visibility: hidden;
+	z-index: 950;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	background: 0;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%
+}
+
+#eos-pagemsger-window {
+	position: absolute;
+	overflow: hidden;
+	opacity: 0;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	margin-left: -240px;
+	margin-top: -144px;
+	left: 50%;
+	top: 40%;
+	width: 480px;
+	height: 360px;
+	box-shadow: 0 0 12px #000;
+	background: #fff;
+	background: rgba(255,255,255,0.81)
+}
+
+#eos-pagemsger-win1 {
+	position: absolute;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 120px;
+	background: #242424;
+	background: rgba(36,36,36,0.81)
+}
+
+#eos-pagemsger-i {
+	position: absolute;
+	overflow: hidden;
+	z-index: 0;
+	margin: 0;
+	padding: 0;
+	border-radius: 100%;
+	left: 30px;
+	top: 30px;
+	width: 60px;
+	height: 60px;
+	outline: 0;
+	vertical-align: middle;
+	text-align: center;
+	word-wrap: normal;
+	line-height: normal;
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 54px;
+	font-style: normal;
+	font-weight: normal
+}
+
+#eos-pagemsger-t {
+	position: absolute;
+	overflow: hidden;
+	z-index: 0;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	left: 115px;
+	top: 32px;
+	width: 285px;
+	height: 60px;
+	outline: 0;
+	vertical-align: middle;
+	text-align: center;
+	word-wrap: normal;
+	line-height: normal;
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 54px;
+	font-style: normal;
+	font-weight: normal
+}
+
+#eos-pagemsger-x {
+	position: absolute;
+	overflow: hidden;
+	z-index: 99;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	right: 18px;
+	top: 8px;
+	width: 20px;
+	height: 42px
+}
+
+#eos-pagemsger-x1 {
+	position: absolute;
+	overflow: hidden;
+	z-index: 1;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%
+}
+
+#eos-pagemsger-x2 {
+	position: absolute;
+	overflow: hidden;
+	z-index: 0;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	color: #000;
+	text-shadow: 0 0 3px #aaa;
+	font-family: "Times New Roman",Times,serif;
+	font-size: 36px;
+	font-style: normal;
+	font-weight: normal
+}
+
+#eos-pagemsger-x:hover #eos-pagemsger-x2 {
+	color: #89d0fc
+}
+
+#eos-pagemsger-x:active #eos-pagemsger-x2 {
+	color: #ff6c6c
+}
+
+#eos-pagemsger-win2 {
+	position: absolute;
+	overflow: hidden;
+	margin: 20px 50px;
+	padding: 0;
+	border: 0;
+	left: 0;
+	top: 120px;
+	width: 380px;
+	height: 135px;
+	background: 0
+}
+
+#eos-pagemsger-c {
+	position: absolute;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	color: #333;
+	background: 0;
+	outline: 0;
+	vertical-align: middle;
+	text-align: left;
+	word-wrap: normal;
+	line-height: normal;
+	font-family: Tahoma,Geneva,sans-serif;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: normal
+}
+
+#eos-pagemsger-win3 {
+	position: absolute;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 65px;
+	background: #242424;
+	background: rgba(36,36,36,0.81)
+}
+
+#eos-pagemsger-button0 {
+	right: 30px
+}
+
+#eos-pagemsger-button1 {
+	right: 110px
+}
+
+#eos-pagemsger-button2 {
+	right: 30px
+}
+
+.eos-pagemsger-button {
+	position: absolute;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	border: 1px solid #999;
+	bottom: 18px;
+	width: 60px;
+	height: 30px;
+	border-radius: 1px;
+	background: #555;
+	outline: 0;
+	vertical-align: middle;
+	text-align: center;
+	word-wrap: normal;
+	line-height: normal;
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: normal;
+	transition: .2s;
+	-moz-transition: .2s;
+	-webkit-transition: .2s;
+	-o-transition: .2s
+}
+
+.eos-pagemsger-button:hover {
+	background: #333
+}
+
+.eos-pagemsger-button:focus {
+	background: #333;
+	border: 1px solid #509be5;
+	box-shadow: 0 0 5px 1px #509be5
+}
+
+.eos-pagemsger-button:active {
+	background: #111;
+	transition: 0s;
+	-moz-transition: 0s;
+	-webkit-transition: 0s;
+	-o-transition: 0s
+}
+
+#eos-start {
+	position: absolute;
+	overflow: hidden;
+	visibility: hidden;
+	z-index: 0;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: #fff
+}
+
+.eos-appframe {
+	position: absolute;
+	overflow: hidden;
+	visibility: hidden;
+	z-index: 0;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: #fff
+}
+
+.eos-appframe-title {
+	position: absolute;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 60px
+}
+
+.eos-appframei {
+	position: absolute;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	left: 25px;
+	top: 15px;
+	right: 50px;
+	height: 30px
+}
+
+.eos-appframei-s {
+	position: absolute;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	color: #333;
+	vertical-align: middle;
+	text-align: left;
+	word-wrap: normal;
+	line-height: normal;
+	font-size: 28px;
+	font-style: normal;
+	font-weight: normal
+}
+
+.eos-appframel {
+	position: absolute;
+	overflow: hidden;
+	visibility: hidden;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	left: 12px;
+	bottom: 0;
+	right: 12px;
+	height: 1px;
+	background: #333
+}
+
+.eos-appframex {
+	position: absolute;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	right: 18px;
+	top: 8px;
+	width: 20px;
+	height: 42px
+}
+
+.eos-appframex1 {
+	position: absolute;
+	overflow: hidden;
+	z-index: 1;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%
+}
+
+.eos-appframex2 {
+	position: absolute;
+	overflow: hidden;
+	z-index: 0;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	color: #666;
+	text-shadow: 0 0 3px #aaa;
+	font-family: "Times New Roman",Times,serif;
+	font-size: 36px;
+	font-style: normal;
+	font-weight: normal
+}
+
+.eos-appframex:hover .eos-appframex2 {
+	color: #3185dc
+}
+
+.eos-appframex:active .eos-appframex2 {
+	color: #ff6c6c
+}
+
+.eos-appframe-body {
+	position: absolute;
+	overflow: auto;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	left: 0;
+	top: 60px;
+	width: 100%;
+	bottom: 0
+}
+
+#eos-qlaunch {
+	position: absolute;
+	overflow: hidden;
+	visibility: hidden;
+	z-index: 900;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	left: -375px;
+	top: 0;
+	width: 385px;
+	height: 100%;
+	background: 0
+}
+
+#eos-qlaunch-bdy {
+	position: absolute;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	left: 0;
+	top: 0;
+	width: 375px;
+	height: 100%;
+	box-shadow: 2px 0 3px #000;
+	background: #000
+}
+
+#eos-qlaunch-ttl {
+	position: absolute;
+	overflow: hidden;
+	z-index: 1;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	height: 50px;
+	width: 100%
+}
+
+#eos-qlaunch-tta {
+	position: absolute;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	left: 0;
+	top: 18px;
+	width: 100%;
+	color: #fff;
+	vertical-align: middle;
+	text-align: center;
+	line-height: normal;
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 15px;
+	font-style: normal;
+	font-weight: normal
+}
+
+#eos-qlaunch-usr {
+	position: absolute;
+	overflow: hidden;
+	z-index: 0;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	left: 0;
+	top: 50px;
+	height: 40px;
+	width: 100%
+}
+
+#eos-qlaunch-lst {
+	position: absolute;
+	overflow: auto;
+	z-index: 0;
+	margin: 20px;
+	padding: 0;
+	border: 0;
+	left: 0;
+	right: 0;
+	top: 90px;
+	bottom: 56px
+}
+
+#eos-qlaunch-ftr {
+	position: absolute;
+	overflow: visible;
+	z-index: 1;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	left: 0;
+	bottom: 0;
+	height: 56px;
+	width: 100%
+}
+
+#eos-qlaunch-dck {
+	position: absolute;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	right: 0;
+	top: 0;
+	width: 10px;
+	height: 100%
+}
+
+.eos-qlaunchmenugroup {
+	position: relative;
+	float: left;
+	overflow: hidden;
+	margin: 10px 0 20px 0;
+	padding: 0;
+	border: 0;
+	left: 0;
+	width: 100%;
+	height: 30px;
+	cursor: default
+}
+
+.eos-qlaunchmenugroups {
+	position: absolute;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	left: 10px;
+	top: 0;
+	width: 315px;
+	color: #fff;
+	vertical-align: middle;
+	text-align: left;
+	line-height: normal;
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 15px;
+	font-style: normal;
+	font-weight: normal
+}
+
+.eos-qlaunchmenugroupl {
+	position: absolute;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 1px;
+	background: #fff
+}
+
+.eos-qlaunchmenubutton {
+	position: relative;
+	float: left;
+	overflow: hidden;
+	margin: 0 0 10px 8px;
+	padding: 0;
+	border: 1px solid #ddd;
+	width: 90px;
+	height: 65px;
+	color: #000;
+	background: #d5d5d5;
+	transition: .2s;
+	-moz-transition: .2s;
+	-webkit-transition: .2s;
+	-o-transition: .2s
+}
+
+.eos-qlaunchmenubuttoni {
+	position: absolute;
+	overflow: hidden;
+	z-index: 1;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%
+}
+
+.eos-qlaunchmenubuttons {
+	position: absolute;
+	overflow: hidden;
+	z-index: 0;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	background: 0;
+	left: 5%;
+	top: 0;
+	width: 90%;
+	height: 100%;
+	color: inherit;
+	vertical-align: middle;
+	text-align: center;
+	line-height: 135%;
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 13px;
+	font-style: normal;
+	font-weight: normal
+}
+
+#eos-taskbar {
+	position: absolute;
+	overflow: hidden;
+	visibility: hidden;
+	z-index: 900;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	right: -275px;
+	top: 0;
+	width: 285px;
+	height: 100%
+}
+
+#eos-taskbar-bdy {
+	position: absolute;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	right: 0;
+	top: 0;
+	width: 275px;
+	height: 100%;
+	box-shadow: -2px 0 3px #000;
+	background: #000
+}
+
+#eos-taskbar-ttl {
+	position: absolute;
+	overflow: hidden;
+	z-index: 0;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	height: 50px;
+	width: 100%
+}
+
+#eos-taskbar-tta {
+	position: absolute;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	left: 0;
+	top: 18px;
+	width: 100%;
+	color: #fff;
+	vertical-align: middle;
+	text-align: center;
+	line-height: normal;
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 15px;
+	font-style: normal;
+	font-weight: normal
+}
+
+#eos-taskbar-lst {
+	position: absolute;
+	overflow: auto;
+	z-index: 0;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	right: 0;
+	top: 50px;
+	bottom: 56px;
+	width: 100%
+}
+
+#eos-taskbar-ftr {
+	position: absolute;
+	overflow: auto;
+	z-index: 0;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	right: 0;
+	bottom: 0;
+	height: 56px;
+	width: 100%
+}
+
+#eos-taskbar-dck {
+	position: absolute;
+	overflow: auto;
+	z-index: 0;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	left: 0;
+	top: 0;
+	width: 10px;
+	height: 100%
+}
+
+.eos-tasklabel {
+	position: absolute;
+	overflow: hidden;
+	visibility: hidden;
+	z-index: -1;
+	margin: 9px 42px 9px 41px;
+	padding: 0;
+	border: 0;
+	border-radius: 2px;
+	left: 0;
+	top: 0;
+	width: 192px;
+	height: 108px;
+	background: #fff
+}
+
+.eos-tasklabeli {
+	position: absolute;
+	overflow: hidden;
+	z-index: 998;
+	opacity: .32;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	color: #333;
+	background: #000
+}
+
+.eos-tasklabelt {
+	position: absolute;
+	overflow: hidden;
+	z-index: 997;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%
+}
+
+.eos-tasklabelt0 {
+	position: absolute;
+	overflow: hidden;
+	margin: 18px;
+	padding: 0;
+	border: 0;
+	left: 0;
+	top: 0;
+	width: 156px;
+	height: 72px;
+	color: #000;
+	vertical-align: middle;
+	text-align: left;
+	line-height: normal;
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 15px;
+	font-style: normal;
+	font-weight: normal
+}
+
+.eos-tasklabelx {
+	position: absolute;
+	overflow: hidden;
+	z-index: 999;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	right: 8px;
+	top: 0;
+	width: 20px;
+	height: 40px
+}
+
+.eos-tasklabelx1 {
+	position: absolute;
+	overflow: hidden;
+	z-index: 1;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	right: 0;
+	top: 0;
+	width: 20px;
+	height: 40px
+}
+
+.eos-tasklabelx2 {
+	position: absolute;
+	overflow: hidden;
+	z-index: 0;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	color: #888;
+	background: 0;
+	text-shadow: 0 0 3px #aaa;
+	font-family: "Times New Roman",Times,serif;
+	font-size: 35px;
+	font-style: normal;
+	font-weight: normal
+}
+
+.eos-tasklabelx:hover .eos-tasklabelx2 {
+	color: #3185dc
+}
+
+.eos-tasklabelx:active .eos-tasklabelx2 {
+	color: #ff6c6c
+}
+
+#eos-user {
+	position: absolute;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	left: 0;
+	top: 0;
+	height: 40px;
+	width: 100%;
+	background: #111;
+	transition: .3s;
+	-moz-transition: .3s;
+	-webkit-transition: .3s;
+	-o-transition: .3s
+}
+
+#eos-user:hover {
+	background: #333
+}
+
+#eos-user:active {
+	background: #222;
+	transition: 0s;
+	-moz-transition: 0s;
+	-webkit-transition: 0s;
+	-o-transition: 0s
+}
+
+#eos-user-tab {
+	position: absolute;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	border-radius: 100%;
+	left: 35px;
+	top: 7px;
+	height: 26px;
+	width: 26px;
+	background: #478fae url(lib.eos.ico.user.png) center no-repeat
+}
+
+#eos-user-uid {
+	position: absolute;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	left: 80px;
+	right: 36px;
+	top: 10px;
+	height: 20px
+}
+
+#eos-user-uids {
+	position: absolute;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	color: #fff;
+	vertical-align: middle;
+	text-align: left;
+	line-height: 20px;
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 15px;
+	font-style: normal;
+	font-weight: normal
+}
+
+#eos-date {
+	position: absolute;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	left: 18px;
+	top: 0;
+	width: 100px;
+	height: 42px;
+	transition: .3s;
+	-moz-transition: .3s;
+	-webkit-transition: .3s;
+	-o-transition: .3s
+}
+
+#eos-date:hover {
+	background: #111
+}
+
+#eos-date1 {
+	position: absolute;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	left: 0;
+	top: 3px;
+	width: 100%;
+	height: 21px;
+	color: #fff;
+	vertical-align: middle;
+	text-align: center;
+	line-height: 18px;
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 13px;
+	font-style: normal;
+	font-weight: normal
+}
+
+#eos-date2 {
+	position: absolute;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	left: 0;
+	top: 21px;
+	width: 100%;
+	height: 21px;
+	color: #fff;
+	vertical-align: middle;
+	text-align: center;
+	line-height: 18px;
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 13px;
+	font-style: normal;
+	font-weight: normal
+}
+
+#eos-langbar {
+	position: absolute;
+	overflow: visible;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	left: 170px;
+	top: 0;
+	width: 60px;
+	height: 42px
+}
+
+#eos-langbar-mnu {
+	position: absolute;
+	overflow: hidden;
+	z-index: 99;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	left: 0;
+	bottom: 42px;
+	width: 180px;
+	height: 0
+}
+
+#eos-langbar-but {
+	position: absolute;
+	overflow: hidden;
+	z-index: 1;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%
+}
+
+#eos-langbar-but:hover+#eos-langbar-cur {
+	background: #333
+}
+
+#eos-langbar-but:active+#eos-langbar-cur {
+	background: #222;
+	transition: 0s;
+	-moz-transition: 0s;
+	-webkit-transition: 0s;
+	-o-transition: 0s
+}
+
+#eos-langbar-ipt {
+	position: absolute;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	left: 0;
+	width: 100%;
+	height: 0
+}
+
+#eos-langbar-cur {
+	position: absolute;
+	overflow: hidden;
+	z-index: 0;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	transition: .3s;
+	-moz-transition: .3s;
+	-webkit-transition: .3s;
+	-o-transition: .3s
+}
+
+#eos-langbar-cua {
+	position: absolute;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	left: 0;
+	top: 11px;
+	height: 20px;
+	width: 100%;
+	color: #fff;
+	vertical-align: middle;
+	text-align: center;
+	line-height: 20px;
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: normal
+}
+
+.eos-langbar-li0 {
+	position: relative;
+	overflow: hidden;
+	float: left;
+	clear: both;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	width: 100%;
+	height: 42px;
+	background: #111;
+	transition: .15s;
+	-moz-transition: .15s;
+	-webkit-transition: .15s;
+	-o-transition: .15s
+}
+
+.eos-langbar-li0:hover {
+	background: #333
+}
+
+.eos-langbar-li1 {
+	position: absolute;
+	overflow: hidden;
+	z-index: 1;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%
+}
+
+.eos-langbar-li2 {
+	position: absolute;
+	overflow: hidden;
+	z-index: 0;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	left: 10px;
+	top: 10px;
+	width: 160px;
+	height: 16px;
+	color: #fff;
+	vertical-align: middle;
+	text-align: left;
+	line-height: normal;
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: normal
+}
+
+#eos-config {
+	position: absolute;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	left: 230px;
+	top: 0;
+	width: 60px;
+	height: 42px;
+	transition: .3s;
+	-moz-transition: .3s;
+	-webkit-transition: .3s;
+	-o-transition: .3s
+}
+
+#eos-config:hover {
+	background: #333
+}
+
+#eos-config:active {
+	background: #222;
+	transition: 0s;
+	-moz-transition: 0s;
+	-webkit-transition: 0s;
+	-o-transition: 0s
+}
+
+#eos-config0 {
+	position: absolute;
+	overflow: hidden;
+	z-index: 1;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%
+}
+
+#eos-config1 {
+	position: absolute;
+	overflow: hidden;
+	z-index: 0;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	left: 20px;
+	top: 11px;
+	height: 20px;
+	width: 20px;
+	background: url(lib.eos.ico.config.png) center no-repeat
+}
+
+#eos-exit {
+	position: absolute;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	left: 290px;
+	top: 0;
+	width: 60px;
+	height: 42px;
+	transition: .3s;
+	-moz-transition: .3s;
+	-webkit-transition: .3s;
+	-o-transition: .3s
+}
+
+#eos-exit:hover {
+	background: #333
+}
+
+#eos-exit:active {
+	background: #222;
+	transition: 0s;
+	-moz-transition: 0s;
+	-webkit-transition: 0s;
+	-o-transition: 0s
+}
+
+#eos-exit0 {
+	position: absolute;
+	overflow: hidden;
+	z-index: 1;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%
+}
+
+#eos-exit1 {
+	position: absolute;
+	overflow: hidden;
+	z-index: 0;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	left: 20px;
+	top: 11px;
+	height: 20px;
+	width: 20px;
+	background: url(lib.eos.ico.exit.png) center no-repeat
+}
+
+.eos-container {
+	position: absolute;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	border-radius: 0;
+	background: 0;
+	outline: 0
+}
+
+.eos-label {
+	position: absolute;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	border-radius: 0;
+	color: #000;
+	background: 0;
+	outline: 0;
+	vertical-align: middle;
+	text-align: left;
+	word-wrap: normal;
+	line-height: normal;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: normal
+}
+
+.eos-link {
+	position: absolute;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	border-radius: 0;
+	color: #000;
+	background: 0;
+	outline: 0;
+	vertical-align: middle;
+	text-align: left;
+	word-wrap: normal;
+	line-height: normal;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: normal
+}
+
+.eos:focus {
+	border: 1px solid #62abf4;
+	box-shadow: 0 0 5px 1px #62abf4
+}
+
+.eos-input {
+	position: absolute;
+	overflow: hidden;
+	margin: 0;
+	padding: 0 10px 0 10px;
+	border: 1px solid #999;
+	border-radius: 1px;
+	color: #000;
+	background: #fff;
+	outline: 0;
+	vertical-align: middle;
+	text-align: left;
+	word-wrap: normal;
+	line-height: normal;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: normal;
+	transition: .25s;
+	-moz-transition: .25s;
+	-webkit-transition: .25s;
+	-o-transition: .25s
+}
+
+.eos-select {
+	position: absolute;
+	overflow: hidden;
+	margin: 0;
+	padding: 0 10px 0 10px;
+	border: 1px solid #999;
+	border-radius: 1px;
+	color: #000;
+	background: #fff;
+	outline: 0;
+	vertical-align: middle;
+	text-align: left;
+	word-wrap: normal;
+	line-height: normal;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: normal;
+	transition: .25s;
+	-moz-transition: .25s;
+	-webkit-transition: .25s;
+	-o-transition: .25s
+}
+
+.eos-button {
+	position: absolute;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	border: 1px solid #999;
+	border-radius: 1px;
+	color: #000;
+	background: #fff;
+	outline: 0;
+	vertical-align: middle;
+	text-align: center;
+	word-wrap: normal;
+	line-height: normal;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: normal;
+	transition: .2s;
+	-moz-transition: .2s;
+	-webkit-transition: .2s;
+	-o-transition: .2s
+}
+
+.eos-button:active {
+	transition: 0s;
+	-moz-transition: 0s;
+	-webkit-transition: 0s;
+	-o-transition: 0s
+}
+
+.eos-grid {
+	position: absolute;
+	overflow: auto;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	border-radius: 0;
+	background: 0;
+	outline: 0
+}
+
+.eos-grid-wait {
+	position: absolute;
+	overflow: hidden;
+	visibility: hidden;
+	z-index: 900;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	border-radius: 0;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: 0;
+	outline: 0
+}
+
+.eos-grid-wait1,.eos-grid-wait2,.eos-grid-wait3,.eos-grid-wait4,.eos-grid-wait5,.eos-grid-wait6 {
+	position: absolute;
+	overflow: hidden;
+	visibility: hidden;
+	margin: 0;
+	margin-left: -30px;
+	margin-top: -30px;
+	padding: 0;
+	border: 0;
+	border-radius: 0;
+	left: 50%;
+	top: 50%;
+	width: 60px;
+	height: 60px;
+	background: 0;
+	outline: 0
+}
+
+.eos-grid-wait-ani {
+	animation: eosgridwait 4.2s infinite cubic-bezier(0.7,0.3,0.3,0.7)
+}
+
+.eos-grid-wait1 {
+	animation-delay: .0s
+}
+
+.eos-grid-wait2 {
+	animation-delay: .2s
+}
+
+.eos-grid-wait3 {
+	animation-delay: .4s
+}
+
+.eos-grid-wait4 {
+	animation-delay: .6s
+}
+
+.eos-grid-wait5 {
+	animation-delay: .8s
+}
+
+.eos-grid-wait6 {
+	animation-delay: 1.0s
+}
+
+@keyframes eosgridwait {
+	0% {
+		visibility: visible
+	}
+
+	0% {
+		transform: rotate(0deg);
+		opacity: 0
+	}
+
+	20% {
+		opacity: 1
+	}
+
+	40% {
+		opacity: 1
+	}
+
+	60% {
+		transform: rotate(360deg);
+		opacity: 0
+	}
+
+	100% {
+		transform: rotate(360deg);
+		opacity: 0
+	}
+}
+
+.eos-grid-wait-i {
+	position: absolute;
+	overflow: hidden;
+	margin: 0;
+	margin-left: -2px;
+	padding: 0;
+	border: 0;
+	border-radius: 100%;
+	left: 50%;
+	top: 0;
+	width: 4px;
+	height: 4px;
+	box-shadow: 0 0 3px #ccc;
+	background: #37bcf5;
+	outline: 0
+}
+
+.eos-grid0 {
+	position: relative;
+	overflow: auto;
+	z-index: 1;
+	margin: 0 auto;
+	padding: 0;
+	border: 1px solid #999;
+	left: 0;
+	top: 0;
+	width: 99%;
+	height: 99%;
+	border-radius: 0;
+	background: 0;
+	outline: 0
+}
+
+.eos-grid-head {
+	position: relative;
+	overflow: hidden;
+	z-index: 2;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	border-bottom: 2px solid #333;
+	border-radius: 0;
+	left: 0;
+	top: 0;
+	width: auto;
+	height: 32px;
+	background: 0;
+	outline: 0
+}
+
+.eos-grid-header {
+	position: relative;
+	overflow: visible;
+	float: left;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	border-right: 1px solid #333;
+	border-radius: 0;
+	left: 0;
+	top: 0;
+	width: auto;
+	height: 100%;
+	color: #eee;
+	background: #747474;
+	outline: 0
+}
+
+.eos-grid-headers {
+	position: absolute;
+	overflow: hidden;
+	z-index: 1;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	border-radius: 0;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	color: inherit;
+	background: inherit;
+	outline: 0;
+	vertical-align: middle;
+	text-align: center;
+	word-wrap: normal;
+	line-height: normal;
+	font-size: 15px;
+	font-style: normal;
+	font-weight: bold;
+	transition: .2s;
+	-moz-transition: .2s;
+	-webkit-transition: .2s;
+	-o-transition: .2s
+}
+
+.eos-grid-headers:hover {
+	background: #3c3c3c
+}
+
+.eos-grid-headerx {
+	position: relative;
+	overflow: hidden;
+	float: right;
+	z-index: 99;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	border-radius: 0;
+	top: 0;
+	left: 3px;
+	width: 5px;
+	height: 100%;
+	background: 0;
+	outline: 0;
+	cursor: w-resize
+}
+
+.eos-grid-headerx:active {
+	background: rgba(160,185,207,0.9)
+}
+
+.eos-grid-body {
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	left: 0;
+	top: 0;
+	border-radius: 0;
+	background: 0;
+	outline: 0
+}
+
+.eos-grid-column {
+	position: relative;
+	overflow: visible;
+	z-index: 1;
+	float: left;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	border-right: 1px solid #999;
+	border-radius: 0;
+	width: 30px;
+	height: 100%;
+	background: 0;
+	outline: 0
+}
+
+.eos-grid-cell {
+	position: relative;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	padding-left: 2%;
+	padding-right: 2%;
+	border: 0;
+	border-bottom: 1px solid #999;
+	border-radius: 0;
+	left: 0;
+	top: 0;
+	width: 96%;
+	height: 25px;
+	color: #000;
+	background: #fff;
+	outline: 0;
+	vertical-align: middle;
+	text-align: left;
+	word-wrap: normal;
+	line-height: normal;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: normal;
+	transition: .1s;
+	-moz-transition: .1s;
+	-webkit-transition: .1s;
+	-o-transition: .1s
+}
+
+.eos-grid-cell0 {
+	color: #666;
+	text-align: center;
+	font-family: Verdana,Tahoma;
+	font-size: 10px;
+	transition: .1s;
+	-moz-transition: .1s;
+	-webkit-transition: .1s;
+	-o-transition: .1s
+}
+
+.eos-wait {
+	position: absolute;
+	overflow: hidden;
+	visibility: hidden;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	border-radius: 0;
+	background: 0;
+	outline: 0
+}
+
+.eos-wait1,.eos-wait2,.eos-wait3,.eos-wait4,.eos-wait5,.eos-wait6 {
+	position: absolute;
+	overflow: hidden;
+	visibility: hidden;
+	margin: 0;
+	margin-left: -30px;
+	margin-top: -30px;
+	padding: 0;
+	border: 0;
+	border-radius: 0;
+	left: 50%;
+	top: 50%;
+	width: 60px;
+	height: 60px;
+	background: 0;
+	outline: 0
+}
+
+.eos-wait-ani {
+	animation: eos-wait 4.2s infinite cubic-bezier(0.7,0.3,0.3,0.7)
+}
+
+.eos-wait1 {
+	animation-delay: .0s
+}
+
+.eos-wait2 {
+	animation-delay: .2s
+}
+
+.eos-wait3 {
+	animation-delay: .4s
+}
+
+.eos-wait4 {
+	animation-delay: .6s
+}
+
+.eos-wait5 {
+	animation-delay: .8s
+}
+
+.eos-wait6 {
+	animation-delay: 1.0s
+}
+
+@keyframes eos-wait {
+	0% {
+		visibility: visible;
+		transform: rotate(0deg);
+		opacity: 0
+	}
+
+	20% {
+		opacity: 1
+	}
+
+	40% {
+		opacity: 1
+	}
+
+	60% {
+		transform: rotate(360deg);
+		opacity: 0
+	}
+
+	100% {
+		transform: rotate(360deg);
+		opacity: 0
+	}
+}
+
+.eos-wait-i {
+	position: absolute;
+	overflow: hidden;
+	margin: 0;
+	margin-left: -2px;
+	padding: 0;
+	border: 0;
+	border-radius: 100%;
+	left: 50%;
+	top: 0;
+	width: 4px;
+	height: 4px;
+	box-shadow: 0 0 3px #ccc;
+	background: #37bcf5;
+	outline: 0
+}
+
+#eos-frm0-1 {
+	visibility: hidden
+}
+
+#eos-frm0-2 {
+	top: 0
+}
+
+#eos-taskbar-label0x {
+	visibility: hidden
+}
