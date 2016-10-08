@@ -582,7 +582,7 @@ eos.stl.start = function() {
 		eos.start.exit(360, function() {
 			eos.qlaunch.show();
 			eos.taskbar.show();
-			//eos.remoteon(1);
+			eos.remoteon(1);
 			gtm_desktop();
 		});
 	};
