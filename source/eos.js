@@ -1,3 +1,5 @@
+/*! Copyright © 2016 Brian Wang, http://explorerOS.com */
+
 (function(a, b) {
     var c = function(g, f) {
         var h = {
