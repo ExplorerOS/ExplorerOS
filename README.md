@@ -30,7 +30,7 @@ alert("the client is " + eos.isbrowser);
 eos.fn.loadimgs([
   'ajax/lib.eos.ico.user.png',
   'ajax/lib.eos.ico.config.png',
-  'http://image.brianwang.net/start.bg.jpg',
+  'image/start.bg.jpg',
   'ajax/lib.eos.ico.exit.png'
 ], 3000, function() {
   alert('Loading images is done!')
